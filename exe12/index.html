@@ -13,17 +13,57 @@
             text-transform: uppercase;
         }
 
+        .tBox {
+            border: solid 3px blue;
+            width: 200px;
+            white-space: nowrap;
+            overflow: clip;
+
+        }
+
+        #t1 {
+            text-overflow: clip;
+        }
+
+        #t2 {
+            text-overflow: ellipsis;
+        }
+
         .center {
             text-align: center;
+        }
+
+        .p {
+            border: solid 3px red;
+            width: 500px;
+
+        }
+
+        .p3 {
+            border: solid 3px red;
+            width: 500px;
+            line-height: 1.5cm;
+        }
+
+        .p1 {
+            border: solid 3px red;
+            width: 100px;
+            white-space: nowrap;
+        }
+
+        .p2 {
+            border: solid 3px red;
+            width: 100px;
+            word-break: break-all;
         }
     </style>
 </head>
 
-<h1>
+<h1 class="tBox" id="t1">
     "Maya's Secret Garden: A Hidden Oasis of Hope"
 </h1>
 
-<h1>
+<h1 class="tBox" id="t2">
     "Maya's Secret Garden: A Hidden Oasis of Hope"
 </h1>
 
@@ -32,18 +72,24 @@
 </h1>
 
 <body>
-    <p>
+    <p class="p">
         In the heart of the city, a forgotten alley revealed a secret garden to Maya. Bathed in sunlight and adorned
         with vibrant blooms, it became her sanctuary. With each stroke of her brush, she immortalized its beauty,
         sharing its magic with the world through her art, igniting imaginations and kindling hope.
     </p>
-    <p>
+    <p class="p3">
         In the heart of the city, a forgotten alley revealed a secret garden to Maya. Bathed in sunlight and adorned
         with vibrant blooms, it became her sanctuary. With each stroke of her brush, she immortalized its beauty,
         sharing its magic with the world through her art, igniting imaginations and kindling hope.
     </p>
+    <hr>
 
-
+    <p class="p1">
+        (https://www.chatgpt.com)
+    </p>
+    <p class="p2">
+        (https://www.chatgpt.com)
+    </p>
 </body>
 
 </html>
