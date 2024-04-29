@@ -6,8 +6,12 @@
     <title>exe13</title>
     <style>
         .picture{
-            list-style-image:url(123456.png) ;
+            list-style:inside url(123456.png) ;
             
+        }
+
+        .p{
+            list-style: inside decimal-leading-zero;
         }
         
         
@@ -28,13 +32,12 @@
     
     <h1>有编号的项目清单</h1>
     
-    <ol> 
-        <ol class=".list li:first-child">
+
+        <ol class="p">
         <li>List 1</li>
         <li>List 2</li>
         <li>List 3</li>
         </ol>
-    </ol>
     
     <hr>
    
