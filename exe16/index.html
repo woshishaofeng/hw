@@ -1,25 +1,61 @@
 <!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <title>exe16</title>
+        <style>
+            caption {
+                caption-side: bottom;
+                margin-top: 10px;
+                color: rgb(43, 226, 83);
+            }
 
-<head>
-    <meta charset="utf-8">
-    <title>exe16</title>
-    <style>
-        table{
+            table {
+                width: 450px;
+                text-align: center;
+                border: solid 5px rgba(212, 0, 255, 0.979);
+                font-weight: 700;
+                border-collapse: collapse;
+                background-color: aquamarine;
+            }
             
-        }
-    </style>
-</head>
+            tbody {
+                color: green;
+            }
 
-<body>
-    <table>
-        <caption>表格01</caption>
+            th, td {
+                width: 150px;
+                border: solid 2px blue;
+                
+            }
 
-        <tbody>
-            <tr> <td>Outlet</td> <td>Address</td> <td>Business Hour</td> </tr>
-            <tr> <td>Shop01</td> <td>Address01</td> <td>1000-1800</td></tr>
-            <tr> <td>Shop02</td> <td>Address02</td> <td>1000-1800</td></tr>
-            <tr> <td>Shop01</td> <td>Address03</td> <td>1000-1800</td></tr>
-        </tbody>
-    </table>
-</body>
+            tr:nth-child(2) {
+                background-color: brown;
+            }
+
+            td:nth-child(2) {
+                color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>表格01</caption>
+            <thead>
+                <tr><th>Outlet</th><th>Address</th><th>Business Hour</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Shop01</td><td>Address01</td><td>1000-1800</td>
+                </tr>
+                <tr>
+                    <td>Shop02</td><td>Address02</td><td>1000-1800</td>
+                </tr>
+                <tr>
+                    <td>Shop03</td><td>Address03</td><td>1000-1800</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
 
